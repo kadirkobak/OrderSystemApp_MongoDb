@@ -40,11 +40,11 @@
             label4 = new Label();
             txtTotalPrice = new TextBox();
             label5 = new Label();
-            button2 = new Button();
-            button1 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            btnList = new Button();
+            btnAdd = new Button();
+            btnDelete = new Button();
+            btnUpdate = new Button();
+            btnGet = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -149,55 +149,55 @@
             label5.TabIndex = 10;
             label5.Text = "Total Price:";
             // 
-            // button2
+            // btnList
             // 
-            button2.Font = new Font("Segoe UI", 10.8F);
-            button2.Location = new Point(476, 15);
-            button2.Name = "button2";
-            button2.Size = new Size(163, 31);
-            button2.TabIndex = 12;
-            button2.Text = "List";
-            button2.UseVisualStyleBackColor = true;
+            btnList.Font = new Font("Segoe UI", 10.8F);
+            btnList.Location = new Point(476, 15);
+            btnList.Name = "btnList";
+            btnList.Size = new Size(163, 31);
+            btnList.TabIndex = 12;
+            btnList.Text = "List";
+            btnList.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAdd
             // 
-            button1.Font = new Font("Segoe UI", 10.8F);
-            button1.Location = new Point(476, 52);
-            button1.Name = "button1";
-            button1.Size = new Size(163, 31);
-            button1.TabIndex = 13;
-            button1.Text = "Add";
-            button1.UseVisualStyleBackColor = true;
+            btnAdd.Font = new Font("Segoe UI", 10.8F);
+            btnAdd.Location = new Point(476, 52);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(163, 31);
+            btnAdd.TabIndex = 13;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnDelete
             // 
-            button3.Font = new Font("Segoe UI", 10.8F);
-            button3.Location = new Point(476, 89);
-            button3.Name = "button3";
-            button3.Size = new Size(163, 31);
-            button3.TabIndex = 14;
-            button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = true;
+            btnDelete.Font = new Font("Segoe UI", 10.8F);
+            btnDelete.Location = new Point(476, 89);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(163, 31);
+            btnDelete.TabIndex = 14;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnUpdate
             // 
-            button4.Font = new Font("Segoe UI", 10.8F);
-            button4.Location = new Point(476, 126);
-            button4.Name = "button4";
-            button4.Size = new Size(163, 31);
-            button4.TabIndex = 15;
-            button4.Text = "Update";
-            button4.UseVisualStyleBackColor = true;
+            btnUpdate.Font = new Font("Segoe UI", 10.8F);
+            btnUpdate.Location = new Point(476, 126);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(163, 31);
+            btnUpdate.TabIndex = 15;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnGet
             // 
-            button5.Font = new Font("Segoe UI", 10.8F);
-            button5.Location = new Point(476, 163);
-            button5.Name = "button5";
-            button5.Size = new Size(163, 31);
-            button5.TabIndex = 16;
-            button5.Text = "Get";
-            button5.UseVisualStyleBackColor = true;
+            btnGet.Font = new Font("Segoe UI", 10.8F);
+            btnGet.Location = new Point(476, 163);
+            btnGet.Name = "btnGet";
+            btnGet.Size = new Size(163, 31);
+            btnGet.TabIndex = 16;
+            btnGet.Text = "Get";
+            btnGet.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -215,11 +215,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(879, 450);
             Controls.Add(pictureBox1);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button1);
-            Controls.Add(button2);
+            Controls.Add(btnGet);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnDelete);
+            Controls.Add(btnAdd);
+            Controls.Add(btnList);
             Controls.Add(txtTotalPrice);
             Controls.Add(label5);
             Controls.Add(txtCity);
@@ -252,11 +252,11 @@
         private Label label4;
         private TextBox txtTotalPrice;
         private Label label5;
-        private Button button2;
-        private Button button1;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button btnList;
+        private Button btnAdd;
+        private Button btnDelete;
+        private Button btnUpdate;
+        private Button btnGet;
         private PictureBox pictureBox1;
     }
 }
