@@ -68,10 +68,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(158, 268);
+            dataGridView1.Location = new Point(10, 210);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(300, 188);
+            dataGridView1.Size = new Size(778, 228);
             dataGridView1.TabIndex = 3;
             // 
             // textBox2
@@ -153,7 +153,7 @@
             button2.Name = "button2";
             button2.Size = new Size(163, 31);
             button2.TabIndex = 12;
-            button2.Text = "Get List";
+            button2.Text = "List";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -163,7 +163,7 @@
             button1.Name = "button1";
             button1.Size = new Size(163, 31);
             button1.TabIndex = 13;
-            button1.Text = "Get List";
+            button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -173,7 +173,7 @@
             button3.Name = "button3";
             button3.Size = new Size(163, 31);
             button3.TabIndex = 14;
-            button3.Text = "Get List";
+            button3.Text = "Delete";
             button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -183,7 +183,7 @@
             button4.Name = "button4";
             button4.Size = new Size(163, 31);
             button4.TabIndex = 15;
-            button4.Text = "Get List";
+            button4.Text = "Update";
             button4.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -193,7 +193,7 @@
             button5.Name = "button5";
             button5.Size = new Size(163, 31);
             button5.TabIndex = 16;
-            button5.Text = "Get List";
+            button5.Text = "Get";
             button5.UseVisualStyleBackColor = true;
             // 
             // Form1
