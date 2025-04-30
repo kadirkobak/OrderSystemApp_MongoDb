@@ -1,3 +1,5 @@
+using OrderSystemApp_MongoDb.Entities;
+using OrderSystemApp_MongoDb.Services;
 namespace OrderSystemApp_MongoDb
 {
     public partial class Form1 : Form
@@ -7,9 +9,21 @@ namespace OrderSystemApp_MongoDb
             InitializeComponent();
         }
 
+        OrderOperation orderOperation = new OrderOperation();
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            var order = new Order
+            {
+                OrderId = txtOrderId.Text,
+                CustomerName = txtCustomerName.Text,
+                District = txtDistrict.Text,
+                City = txtCity.Text,
+                TotalPrice = Convert.ToDecimal(txtTotalPrice.Text)
+            };
 
+            orderOperation.AddOrder(order);
+            MessageBox.Show("Order added successfully!");
         }
     }
 }
