@@ -44,7 +44,7 @@
             btnAdd = new Button();
             btnDelete = new Button();
             btnUpdate = new Button();
-            btnGet = new Button();
+            btnGetById = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -189,15 +189,15 @@
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // btnGet
+            // btnGetById
             // 
-            btnGet.Font = new Font("Segoe UI", 10.8F);
-            btnGet.Location = new Point(476, 163);
-            btnGet.Name = "btnGet";
-            btnGet.Size = new Size(163, 31);
-            btnGet.TabIndex = 16;
-            btnGet.Text = "Get";
-            btnGet.UseVisualStyleBackColor = true;
+            btnGetById.Font = new Font("Segoe UI", 10.8F);
+            btnGetById.Location = new Point(476, 163);
+            btnGetById.Name = "btnGetById";
+            btnGetById.Size = new Size(163, 31);
+            btnGetById.TabIndex = 16;
+            btnGetById.Text = "GetById";
+            btnGetById.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -215,7 +215,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(879, 450);
             Controls.Add(pictureBox1);
-            Controls.Add(btnGet);
+            Controls.Add(btnGetById);
             Controls.Add(btnUpdate);
             Controls.Add(btnDelete);
             Controls.Add(btnAdd);
@@ -256,7 +256,7 @@
         private Button btnAdd;
         private Button btnDelete;
         private Button btnUpdate;
-        private Button btnGet;
+        private Button btnGetById;
         private PictureBox pictureBox1;
     }
 }
