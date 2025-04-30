@@ -51,5 +51,15 @@ namespace OrderSystemApp_MongoDb.Services
 
             return orderList;
         }
+
+
+        public void DeleteOrder(string orderId)
+        {
+            var connection = new MongoDbConnection();
+            var orderCollection = connection.GetOrdersCollection();
+            
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", new ObjectId(orderId));
+            orderCollection.DeleteOne(filter);
+        }
     }
 }

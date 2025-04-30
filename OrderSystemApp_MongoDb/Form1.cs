@@ -31,5 +31,12 @@ namespace OrderSystemApp_MongoDb
             List<Order> orders = orderOperation.GetAllOrders();
             dataGridView1.DataSource = orders;
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string orderId = txtOrderId.Text;
+            orderOperation.DeleteOrder(orderId);
+            MessageBox.Show("Order deleted successfully!");
+        }
     }
 }
