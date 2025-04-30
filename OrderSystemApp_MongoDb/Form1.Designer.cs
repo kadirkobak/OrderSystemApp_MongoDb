@@ -158,6 +158,7 @@
             btnList.TabIndex = 12;
             btnList.Text = "List";
             btnList.UseVisualStyleBackColor = true;
+            btnList.Click += btnList_Click;
             // 
             // btnAdd
             // 

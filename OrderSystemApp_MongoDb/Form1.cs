@@ -25,5 +25,11 @@ namespace OrderSystemApp_MongoDb
             orderOperation.AddOrder(order);
             MessageBox.Show("Order added successfully!");
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            List<Order> orders = orderOperation.GetAllOrders();
+            dataGridView1.DataSource = orders;
+        }
     }
 }
