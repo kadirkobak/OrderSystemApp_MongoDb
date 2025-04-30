@@ -1,5 +1,6 @@
 using OrderSystemApp_MongoDb.Entities;
 using OrderSystemApp_MongoDb.Services;
+
 namespace OrderSystemApp_MongoDb
 {
     public partial class Form1 : Form
@@ -37,6 +38,22 @@ namespace OrderSystemApp_MongoDb
             string orderId = txtOrderId.Text;
             orderOperation.DeleteOrder(orderId);
             MessageBox.Show("Order deleted successfully!");
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string orderId = txtOrderId.Text;
+            var order = new Order
+            {
+                OrderId = orderId,
+                CustomerName = txtCustomerName.Text,
+                District = txtDistrict.Text,
+                City = txtCity.Text,
+                TotalPrice = Convert.ToDecimal(txtTotalPrice.Text)
+            };
+
+            orderOperation.UpdateOrder(orderId,order);
+            MessageBox.Show("Order updated successfully!");
         }
     }
 }

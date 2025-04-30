@@ -57,9 +57,25 @@ namespace OrderSystemApp_MongoDb.Services
         {
             var connection = new MongoDbConnection();
             var orderCollection = connection.GetOrdersCollection();
-            
+
             var filter = Builders<BsonDocument>.Filter.Eq("_id", new ObjectId(orderId));
             orderCollection.DeleteOne(filter);
         }
+
+        public void UpdateOrder(string orderId, Order updatedOrder)
+        {
+            var connection = new MongoDbConnection();
+            var orderCollection = connection.GetOrdersCollection();
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", new ObjectId(orderId));
+            var update = Builders<BsonDocument>.Update
+                .Set("CustomerName", updatedOrder.CustomerName)
+                .Set("District", updatedOrder.District)
+                .Set("City", updatedOrder.City)
+                .Set("TotalPrice", updatedOrder.TotalPrice);
+            orderCollection.UpdateOne(filter, update);
+        }
     }
+
+
+
 }
