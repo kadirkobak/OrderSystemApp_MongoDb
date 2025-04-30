@@ -23,6 +23,8 @@ namespace OrderSystemApp_MongoDb.Services
                 { "City", order.City },
                 { "TotalPrice", order.TotalPrice }
             };
+
+            orderCollection.InsertOne(document);
         }
     }
 }
