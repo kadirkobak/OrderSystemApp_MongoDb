@@ -17,7 +17,7 @@ namespace OrderSystemApp_MongoDb.Services
 
             var document = new BsonDocument
             {
-                { "OrderId", order.OrderId },
+                
                 { "CustomerName", order.CustomerName },
                 { "District", order.District },
                 { "City", order.City },
